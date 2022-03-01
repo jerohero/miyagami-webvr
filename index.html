@@ -8,7 +8,7 @@
   <body>
     <a-scene>
         <a-assets>
-            <a-asset-item id="car" src="assets/car.gltf"></a-asset-item>
+            <a-asset-item id="car" src="assets/car.glb"></a-asset-item>
         </a-assets>
 
         <a-entity id="environment" environment="preset: forest"></a-entity>
@@ -22,9 +22,9 @@
         <a-entity
             id="car"
             gltf-model="#car"
-            scale="0.01 0.01 0.01"
-            rotation="-90 0 0"
-            position="-2 0 -1"
+            position="-2 0 -2"
+            rotation="0 170 0"
+            scale="1.2 1.2 1.2"
             cursor-listener
         ></a-entity>
 
