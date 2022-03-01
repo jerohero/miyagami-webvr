@@ -1,13 +1,5 @@
 let environmentEl;
-
-const presets = [
-    'forest',
-    'egypt',
-    'japan',
-    'dream',
-    'volcano',
-    'starry'
-];
+const presets = ['forest', 'egypt', 'japan', 'dream', 'volcano', 'goldmine', 'tron', 'starry'];
 let activePreset = 'forest';
 
 window.onload = () => {
