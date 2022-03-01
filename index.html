@@ -11,7 +11,22 @@
             <a-asset-item id="car" src="assets/car.gltf"></a-asset-item>
         </a-assets>
 
-        <a-entity id="environment" environment="preset:forest"></a-entity>
+        <a-entity id="environment" environment="preset: forest"></a-entity>
+
+        <a-entity
+            id="start-text"
+            text="value: Are you ready to travel the world?\nThen get in your car!; align: center; color: black; width: 3;"
+            position="0 1.9 -2"
+        ></a-entity>
+
+        <a-entity
+            id="car"
+            gltf-model="#car"
+            scale="0.01 0.01 0.01"
+            rotation="-90 0 0"
+            position="-2 0 -1"
+            cursor-listener
+        ></a-entity>
 
         <a-entity camera look-controls position="0 1.6 0">
             <a-entity
@@ -22,15 +37,6 @@
                 geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
             ></a-entity>
         </a-entity>
-
-        <a-entity
-            id="car"
-            gltf-model="#car"
-            scale="0.01 0.01 0.01"
-            rotation="-90 0 0"
-            position="-2 0 -1"
-            cursor-listener
-        ></a-entity>
     </a-scene>
   </body>
 </html>
