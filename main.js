@@ -15,7 +15,7 @@ window.onload = () => {
 }
 
 const nextPreset = () => {
-    const nextPreset = presets[presets.indexOf(activePreset) + 1];
+    const nextPreset = presets[presets.indexOf(activePreset) + 1] || presets[0];
 
     environmentEl.setAttribute('environment', `preset:${ nextPreset }`);
 
